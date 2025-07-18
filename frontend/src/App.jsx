@@ -12,7 +12,7 @@ function App() {
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const API = "http://localhost:5000/api"; // backend base
+  const API = "https://leaderboard-app-production.up.railway.app/api"; // backend base
 
   const fetchUsers = async () => {
     const res = await axios.get(`${API}/users`);
